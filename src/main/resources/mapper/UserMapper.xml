@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.panchao.mymybatis.mapper.UserMapper">
+	<select id="selectById" parameterType="java.lang.String" resultType="com.panchao.mymybatis.entity.UserEntity">
+		select * from user where id = ?
+	</select>
+	<insert id="insert" parameterType="java.lang.String">
+		INSERT INTO user(name,sex) VALUES (?, ?)
+	</insert>
+	<update id="updateById" parameterType="java.lang.String">
+		update user set name=?,sex=? where id=?
+	</update>
+	<update id="update" parameterType="java.lang.String">
+		update user set sex=?
+	</update>
+	<delete id="delete" parameterType="java.lang.String">
+		delete from user where id=?
+	</delete>
+</mapper>
