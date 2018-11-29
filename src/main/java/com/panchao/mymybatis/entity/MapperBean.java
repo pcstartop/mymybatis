@@ -21,8 +21,12 @@ public class MapperBean {
 	public void setMethodList(List<Method> methodList) {
 		this.methodList = methodList;
 	}
+
 	@Override
 	public String toString() {
-		return "[interfaceName="+interfaceName+",methodList="+methodList.toString()+"]";
+		return "MapperBean{" +
+				"interfaceName='" + interfaceName + '\'' +
+				", methodList=" + methodList +
+				'}';
 	}
 }

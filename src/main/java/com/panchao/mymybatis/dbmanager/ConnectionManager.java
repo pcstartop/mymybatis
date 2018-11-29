@@ -16,6 +16,9 @@ public class ConnectionManager {
 	private Connection connection = null;
 
 	public ConnectionManager() {
+	}
+
+	static{
 		try {
 			//加载驱动
 			Class.forName(ConfigureFileUtil.getDataBase().getDriverClassName());

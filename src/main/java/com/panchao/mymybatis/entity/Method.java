@@ -55,7 +55,12 @@ public class Method {
 
 	@Override
 	public String toString() {
-		return "[methodName=" + methodName + ",parameterType=" + parameterType + ",resultType=" + resultType.toString()
-				+ ",sqltype=" + sqltype + ",sql=" + sql + "]";
+		return "Method{" +
+				"methodName='" + methodName + '\'' +
+				", parameterType='" + parameterType + '\'' +
+				", resultType='" + resultType + '\'' +
+				", sqltype=" + sqltype +
+				", sql='" + sql + '\'' +
+				'}';
 	}
 }
